@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #304e5b; /* Background color for Part 3 */
+    font-family: 'FontName', sans-serif; /* Use your desired font */
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.container {
+    width: 80%;
+    max-width: 90%;
+    padding: 10px;
+    background-color: rgba(54, 53, 51, 0); /* Background color for the container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    margin: 50px auto;
+    margin: 60%;
+    color: #fff; /* Text color for content on top of the video */
+}
+
+/* Set up the video background */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#backgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#diwaliWishContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ... (Previous CSS styles) ... */
+
+.diwali-wish {
+    font-size: 48px; /* Increase the font size for better visibility */
+    font-family: 'DM Serif Display', serif; /* Apply the desired font */
+    color: #ff9900; /* Text color */
+    position: absolute; /* Position the text absolutely */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Center the text perfectly */
+    z-index: 1; /* Set a higher z-index to place it above the video */
+}
+
+/* Apply animation to each letter */
+.diwali-wish h1 span {
+    display: inline-block;
+    transform-origin: center bottom;
+    animation: dance 1s infinite alternate;
+}
+
+/* Define the dance animation */
+@keyframes dance {
+    0% {
+        transform: scale(1) translateY(0);
+    }
+    100% {
+        transform: scale(1.1) translateY(-5px);
+    }
+}
+
+/* Apply different delays to each letter */
+.diwali-wish h1 span:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.diwali-wish h1 span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.diwali-wish h1 span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+/* ... (Previous CSS styles) ... */
+
+h1 {
+    font-size: 32px;
+    color: #e0ad13; /* Text color for the "Happy Diwali" heading */
+}
+
+#nameContainer {
+    margin-top: 20px;
+}
+
+h2#diwaliName {
+    font-size: 24px;
+    color: #d2a023; /* Text color for the displayed name */
+}
+
+button#shareButton {
+    background-color: #e0c813; /* Background color for the "Share" button */
+    color: #120e10; /* Text color for the "Share" button */
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 100px; /* Adjust the margin as needed */
+}
+
+button#shareButton:hover {
+    background-color: #ff6600; /* Change background color on hover */
+}
+
